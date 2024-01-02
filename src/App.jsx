@@ -1,10 +1,11 @@
 import "./App.css";
 import "./index.css";
+import Logo from "./components/Logo/Logo";
 
 function App() {
   return (
     <div className="bg-rose-200 min-h-screen">
-      <img src="/public/Logo.png" alt="logo" />
+      <Logo />
     </div>
   );
 }
