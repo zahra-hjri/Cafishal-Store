@@ -1,7 +1,7 @@
 const Logo = () => {
   return (
     <div className="flex justify-center ">
-      <img className="relative top-3" src="/Logo.png" alt="logo" />
+      <img className="absolute -top-20" src="/Logo.png" alt="logo" />
     </div>
   );
 };
