@@ -1,5 +1,16 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+} */
+
+@font-face {
+  font-family: "iranSans";
+  src: url("./font/IRANSansWeb.ttf") format("truetype"); /* مسیر فایل فونت را براساس مسیر واقعی تنظیم کنید */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "iranSans", sans-serif;
 }
