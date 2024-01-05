@@ -4,8 +4,8 @@ import { IoMenu } from "react-icons/io5";
 
 const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
   return (
-    <div className="bg-black fixed top-20 w-2/3 md:w-full ">
-      <ul className="flex-col md:flex text-rose-200 p-4 justify-evenly">
+    <div className="bg-black fixed md:top-20 w-2/3 md:w-full ">
+      <ul className="flex-col md:flex-row text-rose-200 p-4 justify-evenly">
         <IoSearchCircle className="text-2xl" />
         <IoMdContact className="text-2xl" />
         <div className="flex">
@@ -18,7 +18,7 @@ const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
               <li>مانتو</li>
             </div>
           ) : (
-            <IoMenu onClick={onOpenMobileMenu} />
+            <IoMenu className="text-2xl" onClick={onOpenMobileMenu} />
           )}
         </div>
       </ul>
