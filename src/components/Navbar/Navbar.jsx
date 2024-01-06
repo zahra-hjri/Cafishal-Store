@@ -1,6 +1,5 @@
 import { IoMdContact } from "react-icons/io";
-import { IoSearchCircle } from "react-icons/io5";
-import { IoMenu } from "react-icons/io5";
+import { IoSearchCircle, IoMenu, IoCloseSharp } from "react-icons/io5";
 
 const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
   return (
@@ -13,13 +12,16 @@ const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
         </div>
         <div className="flex">
           {isOpenMobileMenu ? (
-            <div className="">
-              <li>شال تابستانه</li>
-              <li>شال گرم</li>
-              <li>شومیز</li>
-              <li>کت</li>
-              <li>مانتو</li>
-            </div>
+            <>
+              <IoCloseSharp onClick={onOpenMobileMenu} />
+              <div className="">
+                <li>شال تابستانه</li>
+                <li>شال گرم</li>
+                <li>شومیز</li>
+                <li>کت</li>
+                <li>مانتو</li>
+              </div>
+            </>
           ) : (
             <IoMenu className="text-2xl" onClick={onOpenMobileMenu} />
           )}
