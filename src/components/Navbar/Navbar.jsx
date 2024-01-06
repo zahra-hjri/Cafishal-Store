@@ -12,11 +12,8 @@ const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
         </div>
         <div className="flex">
           {isOpenMobileMenu ? (
-            <div className="flex justify-between">
-              <IoCloseSharp
-                className="text-2xldiv"
-                onClick={onOpenMobileMenu}
-              />
+            <div className="flex justify-between w-80">
+              <IoCloseSharp className="text-2xl" onClick={onOpenMobileMenu} />
               <div className="">
                 <li>شال تابستانه</li>
                 <li>شال گرم</li>
