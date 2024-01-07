@@ -12,7 +12,7 @@ function App() {
   }
   return (
     <div className="bg-rose-200 min-h-screen">
-      <Logo />
+      {/* <Logo /> */}
       <Navbar
         isOpenMobileMenu={isOpenMobileMenu}
         onOpenMobileMenu={handleOpenMobileMenu}
