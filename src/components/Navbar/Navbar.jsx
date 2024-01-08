@@ -3,7 +3,7 @@ import { IoSearchCircle, IoMenu, IoCloseSharp } from "react-icons/io5";
 
 const Navbar = ({ isOpenMobileMenu, onOpenMobileMenu }) => {
   return (
-    <div className="bg-black fixed md:top-20 w-full ">
+    <div className="bg-black  w-full ">
       <ul className="flex text-rose-200 p-4 justify-evenly">
         {/* <img className="absolute -top-20" src="/Logo.png" alt="logo" /> */}
         <div className="flex gap-2">
