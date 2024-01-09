@@ -11,11 +11,10 @@ const Products = () => {
   }, []);
   return (
     <div className="bg-blue-300">
-      {products.map((item) => {
-        <p>{item}</p>;
-        // <Product key={item.id} product={item} />;
-      })}
-      {/* <p>oooo</p> */}
+      {products.map((item) => (
+        // <p>{item.title}</p>
+        <Product key={item.id} product={item} />
+      ))}
     </div>
   );
 };
