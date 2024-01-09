@@ -3,7 +3,7 @@ import Product from "../Product/Product";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
-
+  console.log(products);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
@@ -12,9 +12,10 @@ const Products = () => {
   return (
     <div className="bg-blue-300">
       {products.map((item) => {
-        <Product key={item.id} product={item} />;
+        <p>{item}</p>;
+        // <Product key={item.id} product={item} />;
       })}
-      <p>oooo</p>
+      {/* <p>oooo</p> */}
     </div>
   );
 };
