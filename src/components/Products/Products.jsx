@@ -10,10 +10,11 @@ const Products = () => {
       .then((json) => setProducts(json));
   }, []);
   return (
-    <div className="">
+    <div className="bg-blue-300">
       {products.map((item) => {
         <Product key={item.id} product={item} />;
       })}
+      <p>oooo</p>
     </div>
   );
 };
