@@ -3,7 +3,7 @@ import "./index.css";
 // import Logo from "./components/Logo/Logo";
 import Navbar from "./components/Navbar/Navbar";
 import Products from "./components/Products/Products";
-
+import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         onOpenMobileMenu={handleOpenMobileMenu}
       />
       <Products />
+      <Footer />
     </div>
   );
 }
