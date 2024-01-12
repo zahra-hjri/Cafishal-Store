@@ -1,7 +1,7 @@
 {
   "products": [
-    { "id": 1, "title": "scarf", "price": 210 },
-    { "id": 2, "title": "jacket", "price": 350 },
-    { "id": 3, "title": "leg", "price": 140 }
+    { "id": 1, "title": "scarf", "price": 210, "image": "./1.jpg" },
+    { "id": 2, "title": "jacket", "price": 350, "image": "./2.jpg" },
+    { "id": 3, "title": "leg", "price": 140, "image": "./3.jpg" }
   ]
 }
