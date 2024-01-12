@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-orange-400">
       <ul>
         <li>shall</li>
         <li>scarf</li>
