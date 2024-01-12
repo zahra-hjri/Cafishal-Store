@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="bg-orange-400">
-      <ul>
+    <div>
+      <ul className="flex">
         <li>shall</li>
         <li>scarf</li>
         <li>tshirt</li>

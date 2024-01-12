@@ -1,9 +1,9 @@
 const Product = ({ product }) => {
   return (
-    <div>
+    <div className="">
+      <img src={product.image} className="h-20 w-20" />
       <p>{product.title}</p>
       <span>{product.price}</span>
-      <img src={product.image} className="h-20 w-20" />
     </div>
   );
 };

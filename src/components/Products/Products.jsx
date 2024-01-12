@@ -2,7 +2,7 @@ import Product from "../Product/Product";
 
 const Products = ({ products }) => {
   return (
-    <div className="bg-blue-300">
+    <div className=" flex justify-around">
       {products.map((item) => (
         // <p>{item.title}</p>
         <Product key={item.id} product={item} />
