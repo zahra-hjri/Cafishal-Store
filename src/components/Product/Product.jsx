@@ -7,7 +7,12 @@ const Product = ({ product }) => {
           <span className="text-white">نام محصول:</span>
           <p className="font-mono font-bold text-white">{product.title}</p>
         </div>
-        <span className="font-mono font-bold text-white">{product.price}</span>
+        <div className="flex">
+          <span>قیمت:</span>
+          <span className="font-mono text-xs font-bold text-white">
+            {product.price}
+          </span>
+        </div>
       </div>
     </div>
   );
