@@ -4,7 +4,7 @@ const Product = ({ product }) => {
       <img src={product.image} className="h-80 w-full rounded-lg" />
       <div className="flex justify-between p-5">
         <div className="flex text-xs ">
-          <span className="text-white">نام محصول:</span>
+          <span className="text-orange">نام محصول:</span>
           <p className="font-mono font-bold text-white">{product.title}</p>
         </div>
         <div className="flex text-xs ">
