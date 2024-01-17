@@ -9,7 +9,7 @@ const Product = ({ product }) => {
         </div>
         <div className="flex text-xs ">
           <span className="text-white">قیمت:</span>
-          <span className="font-mono text-xs font-bold text-white">
+          <span className="font-mono bg-white text-xs font-bold text-white">
             {product.price}
           </span>
         </div>
