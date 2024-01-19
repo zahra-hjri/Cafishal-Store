@@ -5,9 +5,9 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between p-5">
       <a href="/">
-        <GiAmpleDress className="text-4xl" />
+        <GiAmpleDress className="text-4xl md:text-5xl" />
       </a>
-      <FaBars className="text-2xl" />
+      <FaBars className="text-2xl md:text-3xl" />
     </div>
   );
 };
