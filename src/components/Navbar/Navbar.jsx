@@ -1,3 +1,5 @@
+import "./Navbar.css";
+
 const Navbar = () => {
   return (
     <div className="bg-slate-950 w-2/3 text-rose-200 h-full">
