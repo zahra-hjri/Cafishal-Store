@@ -8,6 +8,8 @@ const Navbar = () => {
         <li className="py-1 cursor-pointer">درباره ما</li>
         <li className="py-1 cursor-pointer">تماس با ما</li>
         <li className="py-1 cursor-pointer">رضایت </li>
+        <li className="py-1 cursor-pointer">توجه </li>
+        <li className="py-1 cursor-pointer">برندینگ </li>
       </ul>
     </div>
   );

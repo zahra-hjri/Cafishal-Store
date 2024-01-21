@@ -7,7 +7,7 @@ const Header = () => {
       <a href="/">
         <GiAmpleDress className="text-4xl md:text-5xl" />
       </a>
-      <FaBars className="text-2xl md:text-3xl text-rose-300" />
+      <FaBars className="text-2xl md:text-3xl " />
     </div>
   );
 };
