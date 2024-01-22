@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="bg-rose-500 w-2/3 text-rose-200 h-full">
+    <div className="bg-gray-950 w-2/3 text-rose-200 h-full">
       <ul className="text-xs p-5">
         <li className="py-1 cursor-pointer">خانه</li>
         <li className="py-1 cursor-pointer">درباره ما</li>
