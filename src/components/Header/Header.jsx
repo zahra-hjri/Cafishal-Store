@@ -7,6 +7,28 @@ const Header = () => {
       <a href="/">
         <GiAmpleDress className="text-4xl md:text-5xl" />
       </a>
+      <nav className="">
+        <ul className="text-xs p-5 flex">
+          <li className="py-1">
+            <a href="">خانه</a>
+          </li>
+          <li className="py-1">
+            <a href="">درباره ما</a>
+          </li>
+          <li className="py-1">
+            <a href="">تماس با ما</a>
+          </li>
+          <li className="py-1">
+            <a href="">رضایت</a>
+          </li>
+          <li className="py-1">
+            <a href="">توجه</a>
+          </li>
+          <li className="py-1">
+            <a href="">برندینگ</a>
+          </li>
+        </ul>
+      </nav>
       <FaBars className="text-2xl md:text-3xl " />
     </header>
   );
