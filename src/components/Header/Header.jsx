@@ -9,12 +9,8 @@ const Header = () => {
       </a>
       <nav className="">
         <ul className="text-sm p-5 flex gap-7 font-bold ">
-          <li className="py-1">
-            <a href="">خانه</a>
-          </li>
-          <li className="py-1">
-            <a href="">درباره ما</a>
-          </li>
+          <li className="py-1">خانه</li>
+          <li className="py-1">درباره ما</li>
           <li className="py-1">
             <a href="">تماس با ما</a>
           </li>
