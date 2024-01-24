@@ -12,16 +12,16 @@ const Header = () => {
           <li className="py-1">خانه</li>
           <li className="py-1">درباره ما</li>
           <li className="py-1">
-            <a href="">تماس با ما</a>
+            تماس با ما
           </li>
           <li className="py-1">
-            <a href="">رضایت</a>
+            رضایت
           </li>
           <li className="py-1">
-            <a href="">توجه</a>
+            توجه
           </li>
           <li className="py-1">
-            <a href="">برندینگ</a>
+            برندینگ
           </li>
         </ul>
       </nav>
