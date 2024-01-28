@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-950 w-2/3 md:w-1/3 text-rose-200 h-screen fixed z-10">
+    <nav className="bg-gray-950 w-2/3 md:w-1/3 text-rose-300 h-screen fixed z-2">
       <ul className="text-xs p-5">
         <li className="py-1">
           خانه
