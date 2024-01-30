@@ -23,6 +23,9 @@ text-gray-950">
             توجه
           </li>
           <li className="py-1">
+            آف فصل
+          </li>
+          <li className="py-1">
             برندینگ
           </li>
         </ul>
