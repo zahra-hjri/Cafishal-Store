@@ -1,5 +1,7 @@
 const Footer = () => {
-  return <div className=""></div>;
+  return <div className="">
+  <li>instagram</li>
+  </div>;
 };
 
 export default Footer;
