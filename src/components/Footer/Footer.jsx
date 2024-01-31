@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <div className="">
+  return <div className="flex">
   <li>instagram</li>
     <li>telegram</li>
     <li>what's app</li>
