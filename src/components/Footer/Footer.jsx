@@ -4,7 +4,7 @@ const Footer = () => {
   const handled = () =>{
     console.log("test")
   }
-  return <div className="flex text-gray-950 my-1 p-4 justify-center items-center">
+  return <div className="flex text-gray-950 my-1 p-4 justify-center items-center text-md">
   <li>instagram</li>
     <li>telegram</li>
     <li>what's app</li>
