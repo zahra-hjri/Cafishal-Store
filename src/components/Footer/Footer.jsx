@@ -4,6 +4,7 @@ const Footer = () => {
     <li>telegram</li>
     <li>what's app</li>
     <li>Twitter</li>
+    <li>zoom</li>
   </div>;
 };
 
