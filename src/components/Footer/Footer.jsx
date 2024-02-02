@@ -1,5 +1,5 @@
 const Footer = () => {
-  return <div className="flex text-gray-950 my-1 p-4 justify-between">
+  return <div className="flex text-gray-950 my-1 p-4 justify-center">
   <li>instagram</li>
     <li>telegram</li>
     <li>what's app</li>
