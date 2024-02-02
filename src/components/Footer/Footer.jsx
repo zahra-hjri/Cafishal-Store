@@ -1,5 +1,9 @@
 const Footer = () => {
   const [id,setId]=UseState("")
+
+  const handled = () =>{
+    console.log("")
+  }
   return <div className="flex text-gray-950 my-1 p-4 justify-center items-center">
   <li>instagram</li>
     <li>telegram</li>
