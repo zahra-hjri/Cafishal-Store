@@ -7,13 +7,13 @@ const Navbar = () => {
         <li className="py-1">
           خانه
         </li>
-        <li className="py-1">
+        <li className="py-2">
           درباره ما
         </li>
-        <li className="py-1">
+        <li className="py-2">
           تماس با ما
         </li>
-        <li className="py-1">
+        <li className="py-2">
           <a href="">رضایت</a>
         </li>
         <li className="py-1">
