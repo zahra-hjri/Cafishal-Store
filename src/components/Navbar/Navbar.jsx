@@ -16,10 +16,10 @@ const Navbar = () => {
         <li className="py-2">
           <a href="">رضایت</a>
         </li>
-        <li className="py-1">
+        <li className="py-2">
           <a href="">توجه</a>
         </li>
-        <li className="py-1">
+        <li className="py-2">
           <a href="">برندینگ</a>
         </li>
         <li className="py-1">
