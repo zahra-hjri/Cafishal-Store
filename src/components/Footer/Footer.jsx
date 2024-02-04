@@ -5,7 +5,7 @@ const Footer = () => {
     console.log("test54")
   }
   return <div className="flex text-gray-950 my-1 p-3 justify-center items-center text-xs">
-  <li>instagram</li>
+  <li className="px-1">instagram</li>
     <li>telegram</li>
     <li>what's app</li>
     <li>Twitter</li>
