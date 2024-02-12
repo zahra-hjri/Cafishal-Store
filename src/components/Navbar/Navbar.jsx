@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 w-2/3 md:w-1/3 text-rose-300 h-screen fixed z-2">
       <ul className="text-xs p-4">
-        <li className="py-1">
+        <li className="py-2">
           خانه
         </li>
         <li className="py-2">
