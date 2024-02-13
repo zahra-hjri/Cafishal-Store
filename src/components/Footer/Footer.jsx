@@ -9,7 +9,7 @@ const Footer = () => {
     <li className="px-2 text-xs">telegram</li>
     <li className="px-2 text-xs">what's app</li>
     <li className="px-2 text-xs">Twitter</li>
-    <li className="px-1 text-xs">zoom</li>
+    <li className="px-2 text-xs">zoom</li>
   </div>;
 };
 
