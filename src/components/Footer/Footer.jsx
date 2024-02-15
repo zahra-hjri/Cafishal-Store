@@ -2,7 +2,7 @@ const Footer = () => {
   const [id,setId]=UseState("")
 
   const handled = () =>{
-    console.log("zahra")
+    console.log("zarin")
   }
   return <div className="flex text-gray-950 my-4 p-4 justify-center items-center text-sm">
   <li className="px-1 text-xs md:text-sm">instam</li>
