@@ -20,10 +20,10 @@ const Header = () => {
           <li className="py-1">
             توجه
           </li>
-          <li className="py-2">
+          <li className="py-1">
             آف فصل
           </li>
-          <li className="py-2">
+          <li className="py-1">
             برندینگ
           </li>
         </ul>
