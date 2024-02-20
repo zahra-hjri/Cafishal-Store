@@ -11,7 +11,7 @@ const Header = () => {
         <ul className="text-sm md:text-md lg:text-lg p-5 flex gap-4 font-bold ">
           <li className="py-1 text-white text-xs">خانه</li>
           <li className="py-1 text-white text-xs">درباره ما</li>
-          <li className="py-1 text-white">
+          <li className="py-1 text-white text-xs">
             تماس با ما
           </li>
           <li className="py-1">
