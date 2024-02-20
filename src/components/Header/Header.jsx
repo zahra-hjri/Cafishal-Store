@@ -3,7 +3,7 @@ import { GiAmpleDress } from "react-icons/gi";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between p-2 text-gray-950 my-1">
+    <header className="flex items-center justify-between p-3 text-gray-950 my-1">
       <a href="/">
         <GiAmpleDress className="text-xl md:text-2xl" />
       </a>
