@@ -6,7 +6,7 @@ const Footer = () => {
   }
   return <div className="flex text-gray-950 my-4 p-6 justify-center items-center text-md">
   <li className="px-1 text-sm md:text-sm lg:text-md px-1">instam</li>
-    <li className="px-1 text-sm md:text-sm lg:text-md">telegram</li>
+    <li className="px-1 text-sm md:text-sm lg:text-md px-1">telegram</li>
     <li className="px-1 text-sm md:text-sm lg:text-md">what's app</li>
     <li className="px-1 text-sm md:text-sm lg:text-md">Twitter</li>
     <li className="px-1 text-sm md:text-sm lg:text-md">zoom</li>
