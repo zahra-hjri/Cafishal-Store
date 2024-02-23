@@ -22,8 +22,7 @@ const Navbar = () => {
         <li className="py-2">
           <a href="">برندینگ</a>
         </li>
-        
-          <a href="">تخفیف</a>
+      
       </ul>
     </nav>
   );
