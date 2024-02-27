@@ -4,7 +4,7 @@ const Footer = () => {
   const handled = () =>{
     console.log("zarin")
   }
-  return <div className="flex text-white my-4 p-5 justify-center items-center text-md">
+  return <div className="flex text-white my-4 p-5 justify-center items-center text-lg">
   <li className="px-1 text-sm md:text-sm lg:text-md px-2">instam</li>
     <li className="px-1 text-sm md:text-sm lg:text-md px-2">telegram</li>
     <li className="px-1 text-sm md:text-sm lg:text-md px-2">what's app</li>
