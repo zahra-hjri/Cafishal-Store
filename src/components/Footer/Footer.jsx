@@ -8,7 +8,7 @@ const Footer = () => {
   <li className="text-sm md:text-sm lg:text-md px-2">instagram</li>
     <li className="text-sm md:text-sm lg:text-md px-2">telegram</li>
     <li className="text-sm md:text-sm lg:text-md px-2">what's app</li>
-    <li className="px-1 text-sm md:text-sm lg:text-md px-2">Twitter</li>
+    <li className="text-sm md:text-sm lg:text-md px-2">Twitter</li>
     <li className="px-1 text-sm md:text-sm lg:text-md px-2">zoom</li>
   </div>;
 };
