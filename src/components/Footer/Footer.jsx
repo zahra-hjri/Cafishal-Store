@@ -1,5 +1,5 @@
 const Footer = () => {
-  const [id,setId]=UseState(1)
+  const [id,setId]=UseState("")
 
   const handled = () =>{
     console.log(id)
