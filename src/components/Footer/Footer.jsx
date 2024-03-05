@@ -1,5 +1,5 @@
 const Footer = () => {
-  const [id,setId]=UseState("")
+  const [id,setId]=UseState("zahra")
 
   const handled = () =>{
     
