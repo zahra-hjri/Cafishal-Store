@@ -10,7 +10,7 @@ const Header = () => {
       <nav>
         <ul className="text-sm md:text-md lg:text-lg p-4 flex gap-4 font-bold ">
           <li className="py-2 text-white text-xs">خانه</li>
-          <li className="py-1 text-white text-xs">درباره ما</li>
+          <li className="py-2 text-white text-xs">درباره ما</li>
           <li className="py-1 text-white text-xs">
             تماس با ما
           </li>
