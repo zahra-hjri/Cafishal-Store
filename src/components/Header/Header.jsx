@@ -28,7 +28,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <FaBars className="text-2xl md:text-3xl " />
+      <FaBars className="text-xl md:text-3xl " />
     </header>
   );
 };
