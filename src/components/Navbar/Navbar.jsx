@@ -19,7 +19,7 @@ const Navbar = () => {
         <li className="py-1 text-white">
           <a href="">توجه</a>
         </li>
-        <li className="py-1 text-white">
+        <li className="py-1 px-1 text-white">
           <a href="">برندینگ</a>
         </li>
       
