@@ -13,7 +13,7 @@ const Navbar = () => {
         <li className="py-1 text-white text-xs">
           تماس با ما
         </li>
-        <li className="py-1 text-white">
+        <li className="py-1 text-white text-xs">
           <a href="">رضایت</a>
         </li>
         <li className="py-1 text-white">
