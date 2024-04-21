@@ -23,7 +23,7 @@ const Header = () => {
           <li className="py-2">
             آف فصل
           </li>
-          <li className="py-1 text-gray-400">
+          <li className="py-1">
             برندینگ
           </li>
         </ul>
