@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-900 w-2/3 md:w-3/4 text-rose-300 h-screen fixed z-20">
       <ul className="text-xs p-5 flex justify-between">
-        <li className="py-2 px-2 text-white text-xs">
+        <li className="py-2 p-2 text-white text-xs">
           خانه
         </li>
         <li className="py-2 text-white text-xs">
