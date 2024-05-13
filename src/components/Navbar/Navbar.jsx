@@ -16,7 +16,7 @@ const Navbar = () => {
         <li className="py-2 text-white text-xs">
           <a href="">رضایت</a>
         </li>
-        <li className="py-1 text-white text-xs">
+        <li className="py-2 text-white text-xs">
           <a href="">توجه</a>
         </li>
         <li className="py-1 px-1 text-white">
