@@ -17,7 +17,7 @@ const Header = () => {
           <li className="py-2 text-sm text-white mx-5">
             رضایت
           </li>
-          <li className="py-2 text-xs text-white mx-4">
+          <li className="py-2 text-xs text-white mx-5">
             توجه
           </li>
           <li className="py-2 text-xs text-white mx-5">
