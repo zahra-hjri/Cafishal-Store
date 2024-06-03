@@ -9,15 +9,15 @@ const Header = () => {
       </a>
       <nav>
         <ul className="text-sm md:text-md lg:text-lg p-3 flex gap-6 font-normal">
-          <li className="py-2 text-white text-xs">خانه</li>
-          <li className="py-2 text-white text-xs">درباره ما</li>
-          <li className="py-2 text-white text-xs">
+          <li className="py-2 text-white text-xs font-bold">خانه</li>
+          <li className="py-2 text-white text-xs font-bold">درباره ما</li>
+          <li className="py-2 text-white text-xs font-bold">
             تماس با ما
           </li>
-          <li className="py-2 text-sm text-white mx-5">
+          <li className="py-2 text-sm text-white mx-5 font-bold">
             رضایت
           </li>
-          <li className="py-2 text-xs text-white mx-5">
+          <li className="py-2 text-xs text-white mx-5 font-bold">
             توجه
           </li>
           <li className="py-2 text-xs text-white mx-5 font-bold">
