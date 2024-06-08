@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="flex w-full items-center justify-between text-white">
       <a href="/">
-        <GiAmpleDress className="text-lg md:text-xl mx-5" />
+        <GiAmpleDress className="text-lg md:text-xl mx-4" />
       </a>
       <nav>
         <ul className="text-sm md:text-md lg:text-lg p-5 flex gap-6 font-normal">
