@@ -8,7 +8,7 @@ const Header = () => {
         <GiAmpleDress className="text-lg md:text-xl mx-3" />
       </a>
       <nav>
-        <ul className="text-sm md:text-md lg:text-lg p-5 flex gap-6 font-normal">
+        <ul className="text-sm md:text-md lg:text-lg p-4 flex gap-6 font-normal">
           <li className="py-2 text-white text-xs font-bold">خانه</li>
           <li className="py-2 text-white text-xs font-bold">درباره ما</li>
           <li className="py-2 text-white text-xs font-bold">
