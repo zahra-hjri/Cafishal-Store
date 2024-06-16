@@ -8,7 +8,7 @@ const Login = ({ seerchTerm, setSeerchTerm }) => {
   const selector = useSelector((state) => state.user);
 
   return (
-    <div className="w-1/2 mx-auto pt-10 ">
+    <div className="w-2/3 mx-auto pt-10 ">
       <h3 className="text-green-500 font-bold">
         login
         <span className="text-pink-500 font-bold px-3">
