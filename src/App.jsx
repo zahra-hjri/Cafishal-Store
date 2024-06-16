@@ -51,7 +51,7 @@ const App = () => {
 
       <Login seerchTerm={seerchTerm} setSeerchTerm={setSeerchTerm} />
       {isLoading ? (
-        <p className="bg-green-200 text-white">is loading data ..</p>
+        <p className="bg-green-300 text-white">is loading data ..</p>
       ) : (
         <List stories={stories} />
       )}
