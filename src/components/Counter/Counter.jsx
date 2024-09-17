@@ -8,26 +8,24 @@ const Counter = () => {
 
   const handleBtnInc = () => {
     dispatch(increment());
-    console.log(count);
   };
   const handleBtnDec = () => {
     dispatch(decrement());
-    console.log(count);
   };
   return (
-    <div className="w-[50%] mx-auto flex gap-5 p-8 items-center justify-center">
+    <div className="w-[50%] h-full mx-auto flex gap-5 p-8 items-center justify-center">
       <button
         onClick={handleBtnDec}
-        className="bg-red-600 text-white rounded-lg flex justify-center items-center w-24 h-14"
+        className="bg-red-600 text-white rounded-lg flex justify-center items-center w-36 font-bold h-14 px-5"
       >
-        decrement
+        DECREMENT
       </button>
       <span className="font-bold text-lg">count:{count}</span>
       <button
         onClick={handleBtnInc}
-        className="bg-green-600 text-white rounded-lg flex justify-center items-center w-24 h-14"
+        className="bg-green-600 text-white rounded-lg flex justify-center items-center w-36 font-bold h-14 px-5"
       >
-        increment
+        INCREMENT
       </button>
     </div>
   );
