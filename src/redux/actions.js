@@ -1,11 +1,11 @@
-export const increment = () => {
+export const incremented = () => {
   return {
-    type: "INCREMENT",
+    type: "incremented",
   };
 };
 
-export const decrement = () => {
+export const decremented = () => {
   return {
-    type: "DECREMENT",
+    type: "decremented",
   };
 };

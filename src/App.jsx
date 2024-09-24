@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className="w-full h-screen bg-blue-200">
-        <Counter>{console.log(store)}</Counter>
+        <Counter></Counter>
       </div>
     </Provider>
   );
