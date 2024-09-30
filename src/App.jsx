@@ -4,7 +4,8 @@ import { Provider } from "react-redux";
 import "./App.css";
 import Search from "./components/Search/Search";
 import List from "./components/List/List";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import useStorageState from "./hooks/useStorageState";
 
 const text = "React";
 const App = () => {
@@ -15,12 +16,8 @@ const App = () => {
     { id: 4, title: "Vue", point: 70 },
     { id: 5, title: "Angular", point: 50 },
   ];
-  const [searchValue, setSearchValue] = useState(
-    localStorage.getItem("search") || ""
-  );
-  useEffect(() => {
-    localStorage.setItem("search", searchValue);
-  }, [searchValue]);
+  const [searchValue, setSearchValue] = useStorageState("search", "");
+
   const [filterData, setFilterData] = useState(frameworkData);
   const handleFilter = (e) => {
     setSearchValue(e.target.value);
