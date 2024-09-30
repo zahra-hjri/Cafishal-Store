@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 import Search from "./components/Search/Search";
 import List from "./components/List/List";
+import { useEffect, useState } from "react";
 
 const text = "React";
 const App = () => {
@@ -14,12 +15,31 @@ const App = () => {
     { id: 4, title: "Vue", point: 70 },
     { id: 5, title: "Angular", point: 50 },
   ];
+  const [searchValue, setSearchValue] = useState(
+    localStorage.getItem("search") || ""
+  );
+  useEffect(() => {
+    localStorage.setItem("search", searchValue);
+  }, [searchValue]);
+  const [filterData, setFilterData] = useState(frameworkData);
+  const handleFilter = (e) => {
+    setSearchValue(e.target.value);
+    const filtered = frameworkData.filter((item) =>
+      item.title.toLowerCase().includes(searchValue)
+    );
+    setFilterData(filtered);
+  };
+
   return (
     <Provider store={store}>
       <div className="w-full h-screen bg-blue-100 font-bold px-28 pt-20">
         <h1 className="text-3xl">Hi {text}</h1>
-        <Search />
-        <List frameworkData={frameworkData} />
+        <Search
+          searchValue={searchValue}
+          setSearchValue={setSearchValue}
+          handleFilter={handleFilter}
+        />
+        <List filterData={filterData} />
         {/* <Counter></Counter> */}
       </div>
     </Provider>

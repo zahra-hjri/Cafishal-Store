@@ -1,12 +1,12 @@
-const List = ({ frameworkData }) => {
+const List = ({ filterData }) => {
   return (
     <ul className="pt-10 menu w-56">
-      {frameworkData.map(({ id, ...frameworkDataWhithoutId }) => (
-        <li className="active " key={id} {...frameworkDataWhithoutId}>
+      {filterData.map((item) => (
+        <li className="active " key={item.id}>
           <div className="flex gap-5 rounded-lg justify-between">
-            <a className=""> {frameworkDataWhithoutId.title}</a>
+            <a className=""> {item.title}</a>
             <div className="badge badge-accent text-[8px] pt-0.5">
-              {frameworkDataWhithoutId.point}
+              {item.point}
             </div>
           </div>
         </li>
