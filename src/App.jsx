@@ -35,6 +35,7 @@ const App = () => {
           searchValue={searchValue}
           setSearchValue={setSearchValue}
           handleFilter={handleFilter}
+          id="search"
         />
         <List filterData={filterData} />
         {/* <Counter></Counter> */}
