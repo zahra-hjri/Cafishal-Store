@@ -5,17 +5,19 @@ import "./App.css";
 import Search from "./components/Search/Search";
 import List from "./components/List/List";
 
-const title = "React";
+const text = "React";
 const App = () => {
   const frameworkData = [
-    { name: "React", point: 100 },
-    { name: "Vue", point: 70 },
-    { name: "Angular", point: 50 },
+    { id: 1, title: "React", point: 100 },
+    { id: 2, title: "Laravel", point: 80 },
+    { id: 3, title: "Redux", point: 40 },
+    { id: 4, title: "Vue", point: 70 },
+    { id: 5, title: "Angular", point: 50 },
   ];
   return (
     <Provider store={store}>
       <div className="w-full h-screen bg-blue-100 font-bold px-28 pt-20">
-        <h1 className="text-3xl">Hi {title}</h1>
+        <h1 className="text-3xl">Hi {text}</h1>
         <Search />
         <List frameworkData={frameworkData} />
         {/* <Counter></Counter> */}
