@@ -4,8 +4,10 @@ import { Provider } from "react-redux";
 import "./App.css";
 import Search from "./components/Search/Search";
 import List from "./components/List/List";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useStorageState from "./hooks/useStorageState";
+import Loading from "./components/Loading/Loading";
+import ErrorMessage from "./ErrorMessage/ErrorMessage";
 
 const text = "React";
 const App = () => {
@@ -18,13 +20,43 @@ const App = () => {
   ];
   const [searchValue, setSearchValue] = useStorageState("search", "");
 
-  const [filterData, setFilterData] = useState(frameworkData);
+  const [filterData, setFilterData] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+
+  /////// Promise
+
+  const getAsynchronous = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        // resolve({ data: { filterData: frameworkData } });
+        reject();
+      }, 4000);
+    });
+  };
+  useEffect(() => {
+    // setLoading(true);
+    getAsynchronous()
+      .then((result) => {
+        setFilterData(result.data.filterData);
+        setLoading(false);
+      })
+      .catch(() => {
+        setError(true);
+      });
+  }, []);
+
+  /////// End Promise
   const handleFilter = (e) => {
     setSearchValue(e.target.value);
     const filtered = frameworkData.filter((item) =>
       item.title.toLowerCase().includes(searchValue)
     );
     setFilterData(filtered);
+  };
+
+  const handleClose = () => {
+    setError((prev) => !prev);
   };
 
   return (
@@ -37,7 +69,12 @@ const App = () => {
           handleFilter={handleFilter}
           id="search"
         />
-        <List filterData={filterData} />
+        {loading ? <Loading /> : <List filterData={filterData} />}
+        {error ? (
+          <ErrorMessage handleClose={handleClose} />
+        ) : (
+          <List filterData={filterData} />
+        )}
         {/* <Counter></Counter> */}
       </div>
     </Provider>
