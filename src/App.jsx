@@ -7,7 +7,7 @@ import List from "./components/List/List";
 import { useEffect, useState } from "react";
 import useStorageState from "./hooks/useStorageState";
 import Loading from "./components/Loading/Loading";
-import ErrorMessage from "./ErrorMessage/ErrorMessage";
+// import ErrorMessage from "./ErrorMessage/ErrorMessage";
 
 const text = "React";
 const App = () => {
@@ -27,23 +27,18 @@ const App = () => {
   /////// Promise
 
   const getAsynchronous = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       setTimeout(() => {
         resolve({ data: { filterData: frameworkData } });
-        // reject();
       }, 4000);
     });
   };
   useEffect(() => {
-    // setLoading(true);
-    getAsynchronous()
-      .then((result) => {
-        setFilterData(result.data.filterData);
-        setLoading(false);
-      })
-      .catch(() => {
-        setError(true);
-      });
+    setLoading(true);
+    getAsynchronous().then((result) => {
+      setFilterData(result.data.filterData);
+      setLoading(false);
+    });
   }, []);
 
   /////// End Promise
@@ -58,6 +53,18 @@ const App = () => {
   // const handleClose = () => {
   //   setError((prev) => !prev);
   // };
+  //   const handleDeletedItem = (ID) => {
+  //     setFilterData(
+  //         frameworkData.filter((item) => item.id !== ID)
+  //     );
+  // };
+  const handleDeletedItem = (ID) => {
+    setFilterData(
+      filterData.filter((item) => {
+        return item.id !== ID;
+      })
+    );
+  };
 
   return (
     <Provider store={store}>
@@ -69,7 +76,11 @@ const App = () => {
           handleFilter={handleFilter}
           id="search"
         />
-        {loading ? <Loading /> : <List filterData={filterData} />}
+        {loading ? (
+          <Loading />
+        ) : (
+          <List filterData={filterData} handleDeletedItem={handleDeletedItem} />
+        )}
         {/* {error ? (
           <ErrorMessage handleClose={handleClose} />
         ) : (
