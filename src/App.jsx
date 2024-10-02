@@ -22,15 +22,15 @@ const App = () => {
 
   const [filterData, setFilterData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  // const [error, setError] = useState(false);
 
   /////// Promise
 
   const getAsynchronous = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        // resolve({ data: { filterData: frameworkData } });
-        reject();
+        resolve({ data: { filterData: frameworkData } });
+        // reject();
       }, 4000);
     });
   };
@@ -55,9 +55,9 @@ const App = () => {
     setFilterData(filtered);
   };
 
-  const handleClose = () => {
-    setError((prev) => !prev);
-  };
+  // const handleClose = () => {
+  //   setError((prev) => !prev);
+  // };
 
   return (
     <Provider store={store}>
@@ -70,11 +70,11 @@ const App = () => {
           id="search"
         />
         {loading ? <Loading /> : <List filterData={filterData} />}
-        {error ? (
+        {/* {error ? (
           <ErrorMessage handleClose={handleClose} />
         ) : (
           <List filterData={filterData} />
-        )}
+        )} */}
         {/* <Counter></Counter> */}
       </div>
     </Provider>
