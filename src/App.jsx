@@ -8,8 +8,12 @@ import { useEffect, useState } from "react";
 import useStorageState from "./hooks/useStorageState";
 import Loading from "./components/Loading/Loading";
 // import ErrorMessage from "./ErrorMessage/ErrorMessage";
+import CounterReducer from "./components/CounterReducer/CounterReducer";
 
 const text = "React";
+
+// const frameworkDataReducer = (state, action) => {};
+
 const App = () => {
   const frameworkData = [
     { id: 1, title: "React", point: 100 },
@@ -23,9 +27,7 @@ const App = () => {
   const [filterData, setFilterData] = useState([]);
   const [loading, setLoading] = useState(false);
   // const [error, setError] = useState(false);
-
   /////// Promise
-
   const getAsynchronous = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
@@ -49,15 +51,6 @@ const App = () => {
     );
     setFilterData(filtered);
   };
-
-  // const handleClose = () => {
-  //   setError((prev) => !prev);
-  // };
-  //   const handleDeletedItem = (ID) => {
-  //     setFilterData(
-  //         frameworkData.filter((item) => item.id !== ID)
-  //     );
-  // };
   const handleDeletedItem = (ID) => {
     setFilterData(
       filterData.filter((item) => {
@@ -87,6 +80,7 @@ const App = () => {
           <List filterData={filterData} />
         )} */}
         {/* <Counter></Counter> */}
+        <CounterReducer />
       </div>
     </Provider>
   );
