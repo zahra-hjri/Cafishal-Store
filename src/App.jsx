@@ -7,12 +7,9 @@ import List from "./components/List/List";
 import { useEffect, useState } from "react";
 import useStorageState from "./hooks/useStorageState";
 import Loading from "./components/Loading/Loading";
-// import ErrorMessage from "./ErrorMessage/ErrorMessage";
 import CounterReducer from "./components/CounterReducer/CounterReducer";
 
 const text = "React";
-
-// const frameworkDataReducer = (state, action) => {};
 
 const App = () => {
   const frameworkData = [
@@ -22,19 +19,17 @@ const App = () => {
     { id: 4, title: "Vue", point: 70 },
     { id: 5, title: "Angular", point: 50 },
   ];
-  const [searchValue, setSearchValue] = useStorageState("search", "");
-
   const [filterData, setFilterData] = useState([]);
+  const [searchValue, setSearchValue] = useStorageState("search", "");
   const [loading, setLoading] = useState(false);
-  // const [error, setError] = useState(false);
+
   /////// Promise
-  const getAsynchronous = () => {
-    return new Promise((resolve) => {
+  const getAsynchronous = () =>
+    new Promise((resolve) => {
       setTimeout(() => {
         resolve({ data: { filterData: frameworkData } });
       }, 4000);
     });
-  };
   useEffect(() => {
     setLoading(true);
     getAsynchronous().then((result) => {
