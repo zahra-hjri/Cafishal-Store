@@ -3,30 +3,28 @@ import { useReducer } from "react";
 const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
-      return { count: state.count + action.payload };
+      return { count: state.count + 4 };
     case "decrement":
-      return { count: state.count - action.payload };
-    case "reset":
-      return { count: 0 };
+      return { count: state.count - 3 };
     default:
-      throw new Error();
+      state;
   }
 };
 
 const CounterReducer = () => {
   const [state, dispach] = useReducer(reducer, { count: 0 });
   return (
-    <div className="w-full bg-green-200 rounded-lg h-24 p-5 flex justify-center items-center gap-5">
+    <div className="flex gap-5 items-center">
       <button
         className="btn btn-warning"
-        onClick={() => dispach({ type: "decrement", payload: 5 })}
+        onClick={() => dispach({ type: "decrement" })}
       >
         -
       </button>
-      <p>Count:{state.count}</p>
+      <p>count:{state.count}</p>
       <button
-        className="btn btn-info"
-        onClick={() => dispach({ type: "increment", payload: 6 })}
+        className="btn btn-success"
+        onClick={() => dispach({ type: "increment" })}
       >
         +
       </button>
