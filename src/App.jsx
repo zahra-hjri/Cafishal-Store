@@ -9,7 +9,8 @@ const App = () => {
   const [loading, data] = usePaginationClient(url, 3);
   const [page, setPage] = useState(1);
   const [programmers, setProgramers] = useState([]);
-  // const pages = data.length;
+  const pages = data.length;
+  console.log(`p: ${pages}`);
   useEffect(() => {
     if (loading) return;
     setProgramers(data[page - 1]);
