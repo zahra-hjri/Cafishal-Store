@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <>
-      <div className="">
+      <div className="mx-auto">
         {loading && <Loading />}
         {!loading && (
           <ul className="flex justify-evenly gap-10 pt-20">
