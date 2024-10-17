@@ -1,34 +1,39 @@
-import { FaBars } from "react-icons/fa";
-import { GiAmpleDress } from "react-icons/gi";
+import { useContext } from "react";
+import { BsSun } from "react-icons/bs";
+import { FaMoon } from "react-icons/fa";
+import { ThemeContext } from "../../context";
 
 const Header = () => {
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+  const handleTheme = () => {
+    setDarkMode((prev) => !prev);
+  };
   return (
-    <header className="flex w-full items-center justify-between text-white">
-      <a href="/">
-        <GiAmpleDress className="text-lg md:text-xl mx-3" />
-      </a>
+    <header
+      className={`flex w-full ${
+        darkMode ? "bg-gray-900 text-white" : ""
+      } items-center justify-between  px-20 pt-10`}
+    >
+      <button onClick={handleTheme}>
+        {darkMode ? (
+          <BsSun className="text-3xl font-bold" />
+        ) : (
+          <FaMoon className="text-3xl font-bold" />
+        )}
+      </button>
       <nav>
-        <ul className="text-sm md:text-md lg:text-lg p-4 flex gap-6 font-normal">
-          <li className="py-3 text-white text-xs font-bold">خانه</li>
-          <li className="py-3 text-white text-xs font-normal">درباره ما</li>
-          <li className="py-2 text-white text-xs font-normal">
-            تماس با ما
-          </li>
-          <li className="py-2 text-sm text-white mx-5 font-bold">
-            رضایت
-          </li>
-          <li className="py-3 text-xs text-white mx-5 font-bold">
-            توجه
-          </li>
-          <li className="py-2 text-xs text-white mx-4 font-bold">
-            آف فصل
-          </li>
-          <li className="py-3 text-xs text-white mx-5 font-bold">
-            برندینگ
-          </li>
+        <ul className="text-sm md:text-md lg:text-lg p-4 flex gap-6 font-bold">
+          <li className=" ">خانه</li>
+          <li className=" ">درباره ما</li>
+          <li className=" ">تماس با ما</li>
+          <li className=" ">رضایت</li>
+          <li className=" ">توجه</li>
+          <li className=" ">آف فصل</li>
+          <li className=" ">برندینگ</li>
         </ul>
       </nav>
-      <FaBars className="text-2xl md:text-2xl text-white " />
+      {/* <FaBars className="text-2xl md:text-2xl  " /> */}
     </header>
   );
 };
