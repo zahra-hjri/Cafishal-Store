@@ -3,3 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+.wrapper {
+  min-height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
