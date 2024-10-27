@@ -7,8 +7,8 @@ const Products = () => {
 
   return (
     <ul className="px-20 mt-10">
-      {data.map((item) => (
-        <ProductCard key={item.id} {...item} />
+      {data.map((id, ...item) => (
+        <ProductCard key={id} {...item} setData={setData} />
       ))}
     </ul>
   );

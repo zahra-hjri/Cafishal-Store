@@ -1,5 +1,6 @@
 import Badge from "./Badge";
 import "../styles/App.css";
+import TotalPrice from "./TotalPrice";
 
 const Header = () => {
   return (
@@ -7,6 +8,7 @@ const Header = () => {
       <div>
         <h1 className="text-3xl font-bold">Shopping Cart</h1>
       </div>
+      <TotalPrice />
       <Badge />
     </div>
   );

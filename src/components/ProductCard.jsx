@@ -1,7 +1,7 @@
 const ProductCard = ({ name, price, quantity }) => {
   return (
     <li className="bg-gray-300 rounded-lg p-2 w-[50%] mt-5 flex gap-5 items-center">
-      <span>{name}</span>
+      <span className="font-bold">{name}</span>
       <span>price:{price}$</span>
       <input
         type="number"
