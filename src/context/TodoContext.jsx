@@ -1,21 +1,15 @@
-import { createContext } from "react";
-import todoReducer from "../reducers/todoReducer";
-import { useReducer } from "react";
+// context/TodoContext.js
+import { createContext, useReducer } from "react";
+import { todoReducer, initialState } from "../reducers/todoReducer";
 
-const initialState = {
-  todos: [],
-};
+export const TodoContext = createContext();
 
-const TodoContext = createContext();
-
-const TodoProvider = ({ children }) => {
-  const [state, dispach] = useReducer(todoReducer, initialState);
+export const TodoProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(todoReducer, initialState);
 
   return (
-    <TodoContext.Provider value={{ state, dispach }}>
+    <TodoContext.Provider value={{ state, dispatch }}>
       {children}
     </TodoContext.Provider>
   );
 };
-
-export { TodoContext, TodoProvider };

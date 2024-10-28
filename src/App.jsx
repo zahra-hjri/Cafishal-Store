@@ -4,6 +4,7 @@ import { ThemeContext } from "./context/context";
 import Products from "./components/Products";
 import TodoList from "./components/TodoList";
 import { TodoProvider } from "./context/TodoContext";
+import AddTodo from "./components/AddTodo";
 
 const App = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <Products />
       <TodoProvider>
+        <AddTodo />
         <TodoList />
       </TodoProvider>
     </div>
