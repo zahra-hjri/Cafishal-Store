@@ -4,13 +4,13 @@ import { TodoContext } from "../context/TodoContext";
 const AddTodo = () => {
   const { dispatch } = useContext(TodoContext);
   const [value, setValue] = useState("");
-  const [todo, setTodo] = useState("");
+  // const [todo, setTodo] = useState("");
 
   const handleAddTodo = () => {
     if (value) {
       dispatch({
         type: "ADD_TODO",
-        payload: { id: todo.length, title: value },
+        payload: { id: Date.now(), title: value },
       });
       setValue("");
     }
@@ -24,7 +24,7 @@ const AddTodo = () => {
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button onClick={handleAddTodo} className="btn btn-success">
+      <button onClick={handleAddTodo} className="btn btn-success text-white">
         add todo
       </button>
     </div>

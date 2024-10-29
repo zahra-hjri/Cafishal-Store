@@ -1,10 +1,5 @@
-// reducers/todoReducer.js
-
 export const initialState = {
-  todos: [
-    { id: 1, title: "clean room" },
-    { id: 2, title: "study english" },
-  ],
+  todos: [],
 };
 
 export const todoReducer = (state, action) => {
