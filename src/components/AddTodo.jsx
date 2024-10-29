@@ -4,7 +4,6 @@ import { TodoContext } from "../context/TodoContext";
 const AddTodo = () => {
   const { dispatch } = useContext(TodoContext);
   const [value, setValue] = useState("");
-  // const [todo, setTodo] = useState("");
 
   const handleAddTodo = () => {
     if (value) {

@@ -5,13 +5,16 @@ import Products from "./components/Products";
 import TodoList from "./components/TodoList";
 import { TodoProvider } from "./context/TodoContext";
 import AddTodo from "./components/AddTodo";
+import { ProductsProvider } from "./context/ProductsContext";
 
 const App = () => {
   const { darkMode } = useContext(ThemeContext);
   return (
     <div className={`w-full h-screen  ${darkMode ? "bg-gray-900" : ""}`}>
       <Header />
-      <Products />
+      <ProductsProvider>
+        <Products />
+      </ProductsProvider>
       <TodoProvider>
         <AddTodo />
         <TodoList />

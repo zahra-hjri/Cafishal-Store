@@ -1,14 +1,16 @@
-import { useState } from "react";
-import initialData from "../services/data";
+import { useContext } from "react";
+// import initialData from "../services/data";
 import ProductCard from "./ProductCard";
+import { ProductsContext } from "../context/ProductsContext";
 
 const Products = () => {
-  const [data, setData] = useState(initialData);
+  const { state } = useContext(ProductsContext);
+  // const [data, setData] = useState(initialData);
 
   return (
     <ul className="px-20 mt-10">
-      {data.map((id, ...item) => (
-        <ProductCard key={id} {...item} setData={setData} />
+      {state.products.map((id, ...item) => (
+        <ProductCard key={id} {...item} />
       ))}
     </ul>
   );
