@@ -11,8 +11,8 @@ const App = () => {
   const { darkMode } = useContext(ThemeContext);
   return (
     <div className={`w-full h-screen  ${darkMode ? "bg-gray-900" : ""}`}>
-      <Header />
       <ProductsProvider>
+        <Header />
         <Products />
       </ProductsProvider>
       <TodoProvider>
