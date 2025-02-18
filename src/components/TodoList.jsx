@@ -1,33 +1,26 @@
-import { useContext } from "react";
-import { TodoContext } from "../context/TodoContext";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { increament, decreament } from "../redux/calculatorSlice";
 
 const TodoList = () => {
-  const { state, dispatch } = useContext(TodoContext);
-
-  const handleRemoveTodo = (id) => {
-    dispatch({
-      type: "REMOVE_TODO",
-      payload: id,
-    });
-  };
-
+  const num = useSelector((state) => state.number);
+  const dispach = useDispatch();
   return (
-    <ul className="px-20 w-full">
-      {state.todos.map((todo) => (
-        <li
-          key={todo.id}
-          className="text-black bg-blue-100 flex gap-10 mt-2 w-[50%] h-10 rounded-lg px-5 items-center justify-between"
-        >
-          {todo.title}
-          <button
-            className="bg-red-400 text-white px-3 rounded-lg h-7 flex items-center"
-            onClick={() => handleRemoveTodo(todo.id)}
-          >
-            Remove
-          </button>
-        </li>
-      ))}
-    </ul>
+    <div className="flex w-full h-screen justify-center items-center gap-5">
+      <button
+        onClick={() => dispach(increament(1))}
+        className="btn-success w-[120px] h-[40px] rounded-lg"
+      >
+        +
+      </button>
+      {num}
+      <button
+        onClick={() => dispach(decreament(4))}
+        className="btn-warning w-[120px] h-[40px] rounded-lg"
+      >
+        -
+      </button>
+    </div>
   );
 };
 
