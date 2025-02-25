@@ -1,9 +1,11 @@
-import TodoList from "./components/TodoList";
+import Calculator from "./components/Calculator";
+
 
 const App = () => {
   return (
-    <div>
-      <TodoList />
+    <div className="w-full h-screen flex items-center justify-center">
+      <Calculator />
+     
     </div>
   );
 };
